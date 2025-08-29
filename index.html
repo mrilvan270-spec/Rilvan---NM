@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermarket Bill Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧾 Supermarket Bill Counter</h1>
+
+  <!-- Input Form -->
+  <div class="form">
+    <input type="text" id="itemName" placeholder="Item Name">
+    <input type="number" id="itemPrice" placeholder="Price">
+    <input type="number" id="itemQty" placeholder="Quantity" value="1">
+    <button onclick="addItem()">Add Item</button>
+  </div>
+
+  <!-- Bill Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="billBody"></tbody>
+  </table>
+
+  <!-- Grand Total -->
+  <h2 id="grandTotal">Grand Total: ₹0</h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
